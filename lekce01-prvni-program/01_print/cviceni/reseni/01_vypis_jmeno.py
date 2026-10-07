@@ -4,3 +4,4 @@
 # Vypiš na obrazovku svoje jméno.
 
 print("Anna")
+print("Petra")

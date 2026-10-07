@@ -4,3 +4,4 @@
 # Zeptej se uživatele na jméno a ulož ho do proměnné.
 
 
+jmeno = input("Jak se jmenuješ? ")

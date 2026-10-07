@@ -4,3 +4,6 @@
 # Pozdrav uživatele jeho jménem (např. Ahoj, Anna).
 
 
+jmeno = input("Jak se jmenuješ? ")
+
+print("Hello,",jmeno,"!")

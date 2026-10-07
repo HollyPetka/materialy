@@ -5,3 +5,5 @@
 #    Číslo nech spočítat Python (napiš do print výpočet, ne hotové číslo).
 
 
+
+print("Dohromady to je", 5*5)

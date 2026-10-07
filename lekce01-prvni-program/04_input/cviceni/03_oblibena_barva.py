@@ -5,3 +5,6 @@
 #    a vypiš ji ve větě.
 
 
+oblibena_barva = input("jaka je tvoje nejoblibenejsi barva?")
+
+print("tvoje oblibena barva je",oblibena_barva )

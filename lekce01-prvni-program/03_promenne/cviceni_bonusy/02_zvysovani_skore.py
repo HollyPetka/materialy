@@ -7,3 +7,10 @@
 #     Nakonec skore vypiš.
 
 
+skore = 0
+skore = skore +10
+skore = skore + 25
+skore = skore + 5
+
+
+print(skore)

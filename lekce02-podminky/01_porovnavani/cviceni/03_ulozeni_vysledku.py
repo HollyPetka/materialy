@@ -4,4 +4,4 @@
 # Ulož do proměnné vysledek porovnání, jestli je 2 + 2 rovno 4.
 #    Pak proměnnou vysledek vypiš.
 
-
+print(2 + 2 == 4)

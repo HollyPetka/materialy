@@ -3,4 +3,5 @@
 
 # Vypiš celočíselný podíl 100 a 8.
 
+print(100 // 8)
 

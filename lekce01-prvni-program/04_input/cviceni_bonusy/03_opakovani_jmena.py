@@ -5,3 +5,7 @@
 #     Vypiš jméno tolikrát za sebou.
 
 
+jmeno = input("Jaké je tvé jméno? ")
+cislo = int(input("Dej mi číslo: "))
+print((jmeno + "\n")  * cislo)
+print((jmeno + " ") * cislo)

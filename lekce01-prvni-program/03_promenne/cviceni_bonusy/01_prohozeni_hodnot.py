@@ -6,3 +6,11 @@
 #     Nakonec obě vypiš.
 
 
+a = 5
+b = 3
+pomocna = a 
+a = b
+b = pomocna
+print(a, b)
+
+

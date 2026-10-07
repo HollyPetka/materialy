@@ -5,3 +5,4 @@
 #    větší než tisíc. Tipni si předem – překvapí tě to?
 
 
+print(2 ** 10 > 1000)

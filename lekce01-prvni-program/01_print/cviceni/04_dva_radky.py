@@ -5,4 +5,5 @@
 #    Dnes
 #    je
 
-
+print("dnes")
+print("je")

@@ -5,3 +5,4 @@
 #    třeba: Ahoj krásný světe
 
 
+print("Ahoj", "krasný", "světe!")

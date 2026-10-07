@@ -5,3 +5,8 @@
 #    a vypíše větu: Ahoj <jmeno>, za rok ti bude <věk + 1> let.
 
 
+jmeno = input("jak se jmenujes? ")
+vek = int(input("kolik ti je let? "))
+vek1 = vek + 1
+
+print("ahoj", jmeno,"za rok ti bude", vek1, "let")

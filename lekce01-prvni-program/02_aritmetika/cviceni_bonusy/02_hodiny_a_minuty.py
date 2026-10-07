@@ -5,3 +5,5 @@
 #     a kolik minut zbyde.
 
 
+print("Hodiny:", 200 // 60)
+print("Minuty:", 200 % 60)
