@@ -12,3 +12,7 @@ ma_pozvanku = True
 ma_zakaz = True
 
 
+if not ma_zakaz and vek >= 18 and (je_clen or ma_pozvanku):
+	print("vitej v klubu!")
+else:
+	print("dnes se nedostanes")
