@@ -8,6 +8,7 @@
 a = 12
 b = 25
 c = 8
+
 if a >= b:
     if a >= c:
         print(a)

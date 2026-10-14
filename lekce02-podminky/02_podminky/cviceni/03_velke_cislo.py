@@ -5,3 +5,9 @@
 #    než 100, jinak "Malé číslo.".
 
 
+cislo = int(input("cislo? "))
+
+if cislo > 100:
+	print("velke cislo ")
+else:
+	print("male cislo ")

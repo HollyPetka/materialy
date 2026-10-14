@@ -9,3 +9,13 @@
 #    Když nemá hlad, vypiš "Tak nic, uvidíme později.".
 
 
+hlad = input("mas hlad? (ano/ne)")
+
+if hlad == "ano":
+	jidlo = input("mas doma jidlo? (ano/ne)")
+	if jidlo == "ano":
+		print("uvar si")
+	else:
+		print("objednej si")
+else:
+	print("tak nic uvidime pozdeji")

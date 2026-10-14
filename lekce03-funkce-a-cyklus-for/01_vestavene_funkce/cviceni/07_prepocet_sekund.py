@@ -5,3 +5,5 @@
 #    minuty a sekundy a vypiš je jako 1:1:1 jediným printem.
 
 
+sekundy = int(input("zadej pocet sekund "))
+print(sekundy // 60, ":", % 2, ":")

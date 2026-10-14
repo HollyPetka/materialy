@@ -17,3 +17,7 @@ if hlad == "ano":
         print("Objednej si.")
 else:
     print("Tak nic, uvidíme později.")
+
+
+
+

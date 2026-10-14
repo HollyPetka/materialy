@@ -9,3 +9,13 @@
 #       - jinak samotné číslo.
 
 
+cislo = int(input("rekni mi cislo "))
+
+if cislo % 15 ==0:
+	print("bum bac")
+elif cislo % 3 ==0:
+	print("bum")
+elif cislo % 5 ==0:
+	print ("bac")
+else:
+	print(cislo)

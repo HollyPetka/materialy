@@ -6,3 +6,15 @@
 #    jinak → 5.
 
 
+body = int(input("kolik bodu z testu ?"))
+
+if body >= 90:
+	print("1")
+elif body >= 75:
+	print("2")
+elif body >= 60:
+	print("3")
+elif body >= 40:
+	print("4")
+else:
+	print("5")

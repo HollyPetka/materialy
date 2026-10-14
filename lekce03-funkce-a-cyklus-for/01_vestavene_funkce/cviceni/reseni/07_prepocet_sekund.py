@@ -9,3 +9,5 @@ hodiny = sekundy // 3600            # kolik celých hodin
 minuty = sekundy % 3600 // 60       # ze zbytku kolik celých minut
 zbyle = sekundy % 60                # a co zbyde jsou sekundy
 print(hodiny, minuty, zbyle, sep=":")   # pro 3661 vypíše 1:1:1
+
+

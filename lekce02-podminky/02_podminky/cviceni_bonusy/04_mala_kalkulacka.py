@@ -7,3 +7,19 @@
 #     Bonus v bonusu: ošetři dělení nulou vlastní hláškou.
 
 
+a = int(input("dej mi prvni cislo "))
+b = int(input("dej mi druhe cislo ")) 
+znak = input("dej mi znamenko ((+, -, *, /) ") 
+
+if znak == "+":
+	print(a+b)
+elif znak == "-":
+	print(a-b)
+elif znak == "*":
+	print(a*b)
+elif znak == "/":
+	print(a/b)
+else:
+	print("nelze delit nulou")
+
+

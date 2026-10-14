@@ -7,3 +7,9 @@
 #    (Vyzkoušej 2024, 1900, 2000.)
 
 
+rok = int(input("zadej rok "))
+
+if (rok % 4 == 0 and rok % 100 != 0) or rok % 400 == 0:
+	print("prestupny")
+else:
+	print("neprestupny")

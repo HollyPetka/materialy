@@ -5,3 +5,9 @@
 #     Zeptej se uživatele na celé číslo a vypiš, jestli je sudé, nebo liché.
 
 
+cislo = int(input("rekni mi cele cislo "))
+
+if cislo % 2 ==0:
+	print("sude")
+else:
+	print("liche")

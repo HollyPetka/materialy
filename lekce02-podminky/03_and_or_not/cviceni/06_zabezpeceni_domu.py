@@ -8,3 +8,11 @@
 #    jinak vypiš "Zabezpečeno.".
 
 
+dvere = input("zavrene dvere? (ano/ne)")
+okna = input("zavrene okna? (ano/ne)")
+alarm = input("zapnuty alarm? (ano/ne)")
+
+if not (dvere == "ano" and okna == "ano" and alarm == "ano"):
+	print("pozor, dum neni zabezpeceny")
+else:
+	print("zabezpeceno")

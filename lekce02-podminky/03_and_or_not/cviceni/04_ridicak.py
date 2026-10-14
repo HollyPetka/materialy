@@ -7,3 +7,7 @@ ma_ridicak = True
 ma_zakaz = True
 
 
+if ma_ridicak and not ma_zakaz:
+	print("muzes ridit")
+else:
+	print("za volant nesmis")	

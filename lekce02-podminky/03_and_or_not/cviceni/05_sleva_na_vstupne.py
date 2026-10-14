@@ -6,3 +6,10 @@
 #    Zeptej se na věk a na den a vypiš "Máš slevu." / "Plné vstupné.".
 
 
+vek = int(input("kolik ti je let? "))
+den = input("den? ")
+
+if vek < 18 or vek >= 65 or den == "pondeli":
+	print("mas slevu")
+else:
+	print("plne vstupne")
