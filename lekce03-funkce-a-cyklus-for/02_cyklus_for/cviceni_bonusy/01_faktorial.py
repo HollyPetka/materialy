@@ -6,3 +6,10 @@
 #     (Faktoriál z 5 je 120.)
 
 
+n = int(input("zadej cislo "))
+faktorial = 1
+
+for cislo in range(1, n +1):
+	faktorial = faktorial * cislo
+	print("kolo", cislo ,":" , faktorial)
+print(faktorial)

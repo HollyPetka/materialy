@@ -7,4 +7,9 @@
 #     **
 #     ***
 
+vyska = int(input("jak vysoky je trojuhelnik? "))
+
+
+for radek in range(1, vyska +1):
+	print("*" * radek)
 

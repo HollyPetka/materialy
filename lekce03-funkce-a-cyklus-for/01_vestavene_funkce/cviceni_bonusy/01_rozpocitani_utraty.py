@@ -5,3 +5,7 @@
 #     zaplatí každý, zaokrouhleno na dvě desetinná místa.
 
 
+utrata_cena = int(input("zadej cenu utraty "))
+pocet_lidi = int(input("zadej pocet lidi "))
+
+print(round(utrata_cena / pocet_lidi))

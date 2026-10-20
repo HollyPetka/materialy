@@ -6,4 +6,8 @@
 
 
 sekundy = int(input("zadej pocet sekund "))
-print(sekundy // 60, ":", % 2, ":")
+hodiny = sekundy // 3600
+minuty = sekundy % 3600 // 60
+zbytek = sekundy % 60
+
+print(hodiny, minuty, zbytek, sep=" : ")

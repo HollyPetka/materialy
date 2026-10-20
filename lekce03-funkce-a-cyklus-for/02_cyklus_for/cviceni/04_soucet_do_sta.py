@@ -4,4 +4,7 @@
 # Spočítej součet všech čísel od 1 do 100 pomocí cyklu for
 #    (ne funkcí sum) a výsledek vypiš.
 
-
+soucet = 0
+for spocitej in range(1,101):
+	soucet = soucet + spocitej
+print (soucet)

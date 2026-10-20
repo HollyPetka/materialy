@@ -6,3 +6,20 @@
 #     Zamysli se, jak si slovo poskládáš pozpátku a jak obě verze porovnáš.
 
 
+slovo = input("zadej slovo " )
+pozpatku = ""
+
+
+
+for znak in slovo:
+	pozpatku = znak + pozpatku
+	print(pozpatku)
+if slovo == pozpatku:
+	print("palindrom")
+else:
+	print("neni palindrom")
+
+
+
+
+

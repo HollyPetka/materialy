@@ -5,3 +5,7 @@
 #     od 1 do N (součet čísel vyděl jejich počtem).
 
 
+cislo = int(input("zadej cislo "))
+prumer = sum(range(1, cislo +1))/ cislo
+
+print(prumer)

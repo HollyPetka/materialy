@@ -6,3 +6,6 @@
 #    Každý řádek bude vypadat třeba takhle: 2 + 5 = 7
 
 
+for kostka1 in range (1,7):
+	for kostka2 in range (1,7):
+		print("hod", kostka1, "+" ,kostka2 ,"=", kostka1 + kostka2)

@@ -44,3 +44,40 @@ print("Vítej!")
 #       ...odsazené řádky...
 #
 # (Celý cyklus krok za krokem ukazuje obrázek cyklus_while.png.)
+
+
+# from random import randrange
+
+# hod = randrange (1,7)
+# while hod !=6:
+#     print("padlo:", hod, "hazime znovu")
+#     hod = randrange (1,7)
+# print ("padla" , hod, "vyhral jsi!")
+
+
+
+
+# while True:
+#     odpoved = input("jak se mas? ")
+#     if odpoved == "spatne":
+#         print("nebavim se s tebou")
+#         break
+#     print("ahoj")
+
+# print("je ti uz lip")
+
+
+# soucet = 0
+# while True:
+#     odpoved = input("zadej cislo (nebo konec)")
+#     if odpoved == "konec":
+#         break
+
+#     cislo = int(odpoved)
+#     if odpoved < 0:
+#         print("zaporne ignoruj")
+#         continue
+#     soucet = soucet + cislo
+#     print("zatim mame", soucet)
+# print("soucet", soucet)
+

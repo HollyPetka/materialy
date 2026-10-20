@@ -7,3 +7,8 @@
 cena = 1000
 
 
+zbozi = 1000 
+dph = round(1000 * 1.21)
+
+print("zbozi bez dph: ", zbozi, end=" ")
+print ("zbozi s dph 21%: " , dph)

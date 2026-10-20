@@ -10,3 +10,12 @@
 #     Zamysli se: na kterém řádku a sloupci se kreslí X a kdy mezera?
 
 
+velikost = int(input("zadej velikost "))
+
+for radek in range(1, velikost +1):
+	for sloupec in range(1, velikost +1):
+		if radek == 1 or radek == velikost or sloupec ==1 or sloupec == velikost:
+			print("X", end=" ")
+		else:
+			print(" ", end=" ")
+	print()
