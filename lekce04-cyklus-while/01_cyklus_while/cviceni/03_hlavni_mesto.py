@@ -5,3 +5,11 @@
 #    dokud nenapíše "Praha". Pak vypiš "Správně!".
 
 
+while True:
+	dotaz = input("jake je hlavni mesto ceska? ")
+	if dotaz =="praha" or dotaz =="Praha" or dotaz =="PRAHA":
+		print("spravne!")
+		break
+	else:
+		print("odpoved nespravna, ale nevadi, zkus to znovu")
+print("sikula!")

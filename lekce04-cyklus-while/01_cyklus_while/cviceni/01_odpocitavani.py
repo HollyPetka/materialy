@@ -5,8 +5,8 @@
 
 
 cislo = 10
-
-
 while cislo >= 1:
-	print
+    print(cislo)
+    cislo = cislo - 1
+print("Start!")
 

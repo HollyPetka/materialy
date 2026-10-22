@@ -5,3 +5,10 @@
 #    přestaň se ptát a vypiš celkový součet.
 
 
+soucet=0
+cislo=int(input("zadej cislo (0=konec):  "))
+
+while cislo != 0:
+	soucet = soucet + cislo
+	cislo=int(input("zadej cislo (0=konec):  "))
+print(soucet)
