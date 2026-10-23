@@ -57,8 +57,11 @@ Podrobný popis formátu je v
 [návodu k importu](https://github.com/pyladiesprague/public-pages/blob/main/code/materials/README.md)
 (repo je soukromé, vidí ho kouči).
 
-Kontrolu dělá GitHub Action `.github/workflows/web.yml`. U každého PR (kromě PR
-z forků, které nemají přístup k tokenu `PUBLIC_PAGES_TOKEN`) a po každém pushi
-do `main` zkusí materiály převést na web, nic přitom nezapisuje; chyba formátu
-nebo konflikt s redakčními opravami webu kontrolu shodí. Po úspěšném pushi do
-`main` pak pošle webu signál `materialy-push` a ten otevře PR s novými stránkami.
+Kontrolu dělá GitHub Action `.github/workflows/web.yml`. Běží jen tady v
+`pyladiesprague/materialy`. Forky účastnic mají workflow taky, ale nemají token
+`PUBLIC_PAGES_TOKEN`, a tak se v nich přeskočí (jinak by jim každý push končil
+chybou a e-mailem od GitHubu). U každého PR (kromě PR z forků, ke kterým se
+token taky nedostane) a po každém pushi do `main` zkusí materiály převést na
+web, nic přitom nezapisuje; chyba formátu nebo konflikt s redakčními opravami
+webu kontrolu shodí. Po úspěšném pushi do `main` pak pošle webu signál
+`materialy-push` a ten otevře PR s novými stránkami.
