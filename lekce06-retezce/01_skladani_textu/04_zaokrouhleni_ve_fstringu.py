@@ -3,8 +3,9 @@
 # ---------------------------------------------
 # Spusť soubor a podívej se na první řádek výpisu.
 #
-# Ten ocas číslic na konci minulého souboru nebyl překlep. S desetinnými
-# čísly počítá Python s drobnou nepřesností a na ceně je to vidět taky:
+# V minulém souboru vyšlo u přečtených stran 57.49999999999999 a nebyl to
+# překlep. S desetinnými čísly počítá Python s drobnou nepřesností
+# a na ceně je to vidět taky:
 
 cena = 249
 s_dph = cena * 1.21

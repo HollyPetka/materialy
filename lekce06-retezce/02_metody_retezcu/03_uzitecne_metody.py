@@ -24,4 +24,5 @@ print(f"[{odpoved.strip()}]")            # [ano]
 
 
 # Metod je mnohem víc. Ve VS Code napiš tečku za řetězec nebo za proměnnou
-# a editor ti nabídne seznam. Pamatovat si je nemusíš.
+# a editor ti nabídne seznam. Pamatovat si je nemusíš – ty nejpoužívanější
+# jsou i v taháku k téhle lekci.

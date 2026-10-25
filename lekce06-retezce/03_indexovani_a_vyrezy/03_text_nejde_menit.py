@@ -10,8 +10,9 @@ slovo = "palec"
 print(slovo[0])     # p
 
 
-# Přepsat ho ale nejde. Řetězec v Pythonu jednou vznikne a od té chvíle
-# se nemění – odborně se tomu říká neměnný. Když potřebuješ jiný,
+# Přepsat ho ale nejde. Zápis slovo[0] = "v" skončí chybou – na konci
+# souboru si to vyzkoušíš. Řetězec v Pythonu jednou vznikne a od té
+# chvíle se nemění, odborně se tomu říká neměnný. Když potřebuješ jiný,
 # vyrobíš nový, třeba z výřezů:
 novy = "v" + slovo[1:]
 print(novy)         # valec

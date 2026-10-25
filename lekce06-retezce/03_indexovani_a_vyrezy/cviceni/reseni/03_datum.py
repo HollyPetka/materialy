@@ -12,4 +12,6 @@ den = datum[8:10]
 
 print(f"{den}. {mesic}. {rok}")
 
-# Pomlčky jsou na indexech 4 a 7, proto ty mezery v číslech.
+# Pomlčky sedí na indexech 4 a 7 a ve výřezech je nechceme. Proto rok
+# končí na čtyřce, měsíc začíná na pětce a den na osmičce – čísla 4 a 7
+# se v nich přeskočí.

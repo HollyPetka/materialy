@@ -10,7 +10,11 @@
 
 odpoved = input("Chceš pokračovat? (ano/ne) ")
 
-upravena = odpoved.strip().lower()
+
+# Nejdřív po krocích, tak jak bys to napsala dneska:
+bez_mezer = odpoved.strip()         # zmizí mezery na krajích
+upravena = bez_mezer.lower()        # vzniknou malá písmena
+
 print(f"[{upravena}]")
 
 if upravena == "ano":
@@ -19,11 +23,11 @@ else:
     print("Končíme.")
 
 
-# Dvě metody se dají napsat za sebe na jeden řádek. Vyhodnocuje se to
-# zleva doprava:
-#   odpoved.strip()    nejdřív zmizí mezery na krajích
-#   .lower()           z toho výsledku pak vzniknou malá písmena
-#
-# Kdyby byly dva kroky přehlednější, jde to i takhle:
-#   bez_mezer = odpoved.strip()
-#   upravena = bez_mezer.lower()
+# Protože strip() vrací řetězec, dá se lower() zavolat rovnou na jeho
+# výsledku a obě metody napsat na jeden řádek. Vyhodnocuje se to zleva
+# doprava, takže vyjde to samé:
+zkracene = odpoved.strip().lower()
+
+print(f"[{zkracene}]")
+
+# Takhle zkráceně se to píše nejčastěji.

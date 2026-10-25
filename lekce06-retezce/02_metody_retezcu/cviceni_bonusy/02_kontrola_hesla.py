@@ -11,3 +11,5 @@
 #    Na číslici se zeptáš průchodem přes znaky: cyklus for z lekce 3
 #    a isdigit() na každý znak.
 #    Na velké písmeno stačí porovnat heslo se sebou samým po lower().
+#    Jde to ale i cyklem jako u číslice – každého znaku se tam zeptáš
+#    metodou isupper().

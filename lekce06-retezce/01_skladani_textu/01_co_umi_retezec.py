@@ -20,7 +20,9 @@ for pismeno in "Ahoj":              # průchod po znacích    (lekce 3)
 vek = 30
 print("Je mi " + str(vek) + " let")     # Je mi 30 let
 
-# Plus spojuje text s textem. Bez str() by ten řádek spadl na TypeError.
+# Plus umí spojit jenom text s textem. Kdybys napsala "Je mi " + vek,
+# tedy text plus číslo, Python by spadl na TypeError. Proto to str() –
+# udělá z čísla 30 text "30" a ten už se spojit dá.
 
 
 # Čím víc kousků, tím hůř se taková věta píše i čte – uhlídat je potřeba

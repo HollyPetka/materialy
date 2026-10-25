@@ -11,12 +11,21 @@
 #    Na číslici se zeptáš průchodem přes znaky: cyklus for z lekce 3
 #    a isdigit() na každý znak.
 #    Na velké písmeno stačí porovnat heslo se sebou samým po lower().
+#    Jde to ale i cyklem jako u číslice – každého znaku se tam zeptáš
+#    metodou isupper().
 
 heslo = input("Zadej heslo: ")
 
 dost_dlouhe = len(heslo) >= 8
+
+# lower() vrací nový řetězec, původní heslo nemění. Když se ty dva
+# od sebe liší, muselo v hesle být velké písmeno – jinak by lower()
+# vrátil přesně to samé.
 ma_velke = heslo != heslo.lower()
 
+# isdigit() na celém hesle by se ptalo, jestli jsou číslice všechny
+# znaky. Tady potřebuješ vědět, jestli je číslice aspoň jedna – proto
+# cyklus. Break ho ukončí, jakmile je jasno.
 ma_cislici = False
 for znak in heslo:
     if znak.isdigit():
@@ -32,9 +41,16 @@ if dost_dlouhe and ma_cislici and ma_velke:
 else:
     print("Heslo nevyhovuje.")
 
-# isdigit() na celém hesle by se ptalo, jestli jsou číslice všechny
-# znaky. Tady potřebuješ vědět, jestli je číslice aspoň jedna – proto
-# cyklus. Break ho ukončí, jakmile je jasno.
-#
-# heslo != heslo.lower() funguje proto, že lower() vrací nový řetězec.
-# Když se od původního liší, bylo v něm velké písmeno.
+
+# Velké písmeno jde hledat i cyklem, úplně stejně jako číslici – jen
+# se každého znaku ptáš metodou isupper(). Je to delší, zato je na
+# první pohled vidět, co se hledá:
+ma_velke_cyklem = False
+for znak in heslo:
+    if znak.isupper():
+        ma_velke_cyklem = True
+        break
+
+print(f"Velké písmeno (cyklem): {ma_velke_cyklem}")
+
+# Obě řešení jsou správně.

@@ -19,8 +19,12 @@ print(jmeno.upper())        # PYLADIES
 #   .         tečka – „na téhle hodnotě"
 #   upper()   metoda, tedy funkce, která k řetězci patří
 #
-# Kulaté závorky jsou povinné stejně jako u len() nebo u tvých funkcí
-# z lekce 5.
+# Kulaté závorky znamenají „zavolej to" – stejně jako u len() nebo
+# u tvých funkcí z lekce 5. Bez nich se metoda nezavolá a Python jenom
+# oznámí, že nějaká taková metoda existuje:
+print(jmeno.upper)      # <built-in method upper of str object at ...>
+
+# Takový výpis skoro vždycky znamená, že někde chybí závorky.
 
 
 # Metodu jde zavolat i rovnou na textu v uvozovkách:
