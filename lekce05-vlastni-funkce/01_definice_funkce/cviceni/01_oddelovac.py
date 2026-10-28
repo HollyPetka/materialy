@@ -5,3 +5,11 @@
 #    Zavolej ji třikrát.
 
 
+def oddelovac ():
+	print(30 * "*")
+
+
+oddelovac ()
+oddelovac ()
+oddelovac ()
+         

@@ -8,3 +8,15 @@
 # definici sem nahoru, soubory se navzájem nevidí.
 
 
+def oddelovac ():
+	print("*" * 30)
+
+def ramecek(text):
+	oddelovac()
+	print(text)
+	oddelovac()
+	
+
+
+ramecek("jak se mas")
+ramecek("mam se fajne , kaaaaamo")

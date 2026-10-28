@@ -7,3 +7,17 @@
 #    Zavolej ji v cyklu for pro známky 1 až 5.
 
 
+def hodnoceni(znamka):
+	if znamka == 1:
+		print("vyborne")
+	elif znamka == 2:
+		print("chvalitebne") 
+	elif znamka == 3:
+		print("dobre")
+	else:
+		print("jeste zabereme")
+
+
+
+for znamka in range(1,6):
+	hodnoceni(znamka)
