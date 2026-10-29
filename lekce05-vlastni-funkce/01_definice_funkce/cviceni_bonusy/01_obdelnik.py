@@ -6,3 +6,9 @@
 #     po pěti hvězdičkách.
 
 
+def obdelnik (sirka, vyska):
+	for radek in range(vyska):
+		print("*" * sirka)
+
+
+obdelnik(5,3)

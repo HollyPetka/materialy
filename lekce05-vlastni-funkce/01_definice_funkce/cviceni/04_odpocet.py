@@ -7,3 +7,11 @@
 #    Krok v range jde nastavit i tak, aby se počítalo dolů.
 
 
+def odpocet(od):
+	for cislo in range(od, 0, -1):
+		print(cislo)
+	print("ted")
+
+
+
+odpocet(8)
