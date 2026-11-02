@@ -6,3 +6,11 @@
 #    po kolika minutách je nádrž prázdná.
 
 
+voda = 45
+cas = 0
+
+while voda > 0:
+	voda = voda - 3
+	cas = cas + 1
+	print("Po", cas, "minutách zbývá", voda, "litrů.")
+print ("nadrz je prazdná po", cas ,"minutách")
