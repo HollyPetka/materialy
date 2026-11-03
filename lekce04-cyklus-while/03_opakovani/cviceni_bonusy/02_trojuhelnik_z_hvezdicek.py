@@ -6,3 +6,7 @@
 #     (Nápověda: text se dá opakovat: "*" * 3 je "***")
 
 
+n = int(input("zadej cislo: "))
+
+for radek in range(1, n +1):
+	print("*" * radek)

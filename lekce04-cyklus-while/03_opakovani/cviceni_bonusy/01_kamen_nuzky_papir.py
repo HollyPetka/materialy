@@ -12,5 +12,35 @@
 #     Kdo koho poráží: kámen tupí nůžky, nůžky stříhají papír,
 #     papír balí kámen.
 #     Nahoru na první řádek nezapomeň:  from random import randrange
+from random import randrange
 
+while True:
+	ja = (input("zadej svuj tah - kamen, nuzky, papir: "))
 
+	cislo = randrange(1,4)
+
+	if cislo == 1:
+		pocitac = "kamen" 
+	elif cislo == 2:
+		pocitac = "nuzky"
+	else:
+		pocitac = "papir"
+
+	print("pocitac hral:", pocitac)
+
+	vyhrala_kamenem = ja == "kamen" and pocitac == "nuzky"
+	vyhrala_nuzkami = ja == "nuzky" and pocitac == "papir"
+	vyhrala_papirem = ja == "papir" and pocitac == "kamen"
+
+	if ja == pocitac:
+		print("remiza")
+	elif vyhrala_kamenem or vyhrala_nuzkami or vyhrala_papirem:
+		print ("vyhrala jsi")
+	else:
+		print ("prohrala jsi")
+
+	znovu = input("Hrát znovu? (ano/ne) ")
+	if znovu == "ne":
+		break
+
+print("Díky za hru!")

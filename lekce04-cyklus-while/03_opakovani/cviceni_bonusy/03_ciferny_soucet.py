@@ -8,3 +8,11 @@
 #     ta funkce zahodí minus.
 
 
+cislo = int(input("zadej cele cislo: "))
+cislo = abs(cislo)
+soucet = 0
+
+while cislo > 0:
+	soucet = soucet + cislo % 10
+	cislo = cislo // 10
+print("soucet cislic je:",soucet)
