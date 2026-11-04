@@ -24,7 +24,9 @@ print(f"Rok narození: {rok_narozeni}")
 #                      ~~~~~^~~~~
 #   TypeError: unsupported operand type(s) for -: 'int' and 'str'
 #
-# (U tebe bude před názvem souboru ještě celá cesta k němu.)
+# (U tebe bude před názvem souboru ještě celá cesta k němu. Se starší
+# verzí Pythonu vypadají vlnovky pod kódem trochu jinak, nebo tam
+# nejsou vůbec – poslední řádek je ale stejný.)
 #
 # Čte se to odspodu.
 #
