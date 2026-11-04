@@ -37,6 +37,8 @@ print(f"Rok narození: {rok_narozeni}")
 # Nad ním je vypsaný řádek s kódem a vlnovky ukazují na místo,
 # kde to prasklo. Úplně nahoře je soubor a číslo řádku.
 #
+# (Celou hlášku s popisky ukazuje obrázek cteni_hlasky.png.)
+#
 # V lekci 1 stačilo vědět, že hláška říká soubor, řádek a druh chyby.
 # Teď ten poslední řádek přečteme celý. Číslo řádku tě pošle na
 # správné místo, poslední řádek řekne, co tam hledat.
