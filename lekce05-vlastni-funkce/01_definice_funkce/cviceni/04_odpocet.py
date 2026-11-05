@@ -14,4 +14,4 @@ def odpocet(od):
 
 
 
-odpocet(8)
+odpocet(5)

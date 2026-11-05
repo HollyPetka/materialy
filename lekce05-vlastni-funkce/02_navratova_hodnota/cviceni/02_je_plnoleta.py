@@ -6,3 +6,11 @@
 #    "Můžeš dál." nebo "Ještě ne.".
 
 
+def je_plnoleta (vek):
+	return vek >= 18
+
+tvuj_vek = int(input("jaky je tvuj vek - kolik ti je let?: "))
+if je_plnoleta (tvuj_vek):
+	print("muzes dal")
+else:
+	print("jeste ne")

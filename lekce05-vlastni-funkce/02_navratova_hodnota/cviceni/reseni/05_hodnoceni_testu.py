@@ -16,3 +16,4 @@ body = int(input("Zadej body (-1 = konec): "))
 while body != -1:
     print(body, "bodů:", hodnoceni(body))
     body = int(input("Zadej body (-1 = konec): "))
+    

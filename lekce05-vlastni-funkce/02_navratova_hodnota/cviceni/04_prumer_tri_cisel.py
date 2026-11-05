@@ -5,3 +5,7 @@
 #    zaokrouhlený na jedno desetinné místo.
 
 
+def prumer (a,b,c):
+	return round((a + b + c)/3, 1)
+
+print (prumer (5,10,5))

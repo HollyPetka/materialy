@@ -19,3 +19,5 @@ def ohodnot_znamku(znamka):
 
 for znamka in range(1, 6):
     ohodnot_znamku(znamka)
+
+
