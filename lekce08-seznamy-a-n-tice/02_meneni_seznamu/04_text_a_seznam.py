@@ -32,6 +32,13 @@ print(veta)                 # Anna a Petra a Jana
 print(", ".join(hoste))     # Anna, Petra, Jana
 
 
-# Položky musí být texty. Čísla join spojit neumí:
-stoly = ["1", "2", "3"]
-print("+".join(stoly))      # 1+2+3
+# Oddělovač může být jakýkoli text. Třeba recept na koktejl:
+suroviny = ["rum", "limeta", "máta", "cukr"]
+print(" + ".join(suroviny))     # rum + limeta + máta + cukr
+
+# Nebo prázdný text. Pak se položky slepí bez mezery:
+slabiky = ["po", "hád", "ka"]
+print("".join(slabiky))         # pohádka
+
+# Položky ale musí být texty. Seznam čísel join nespojí a program spadne
+# s chybou TypeError.

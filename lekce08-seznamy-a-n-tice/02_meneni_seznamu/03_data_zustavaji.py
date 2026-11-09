@@ -26,9 +26,11 @@ for i in range(pocet):
 # zevnitř ven: input, pak int, pak append.
 #
 #     veky.append(int(input("Věk: ")))
+#
+# Kratší ale neznamená lepší. Piš to tak, jak se ti to líp čte.
 
 print(f"Součet: {sum(veky)}")
-print(f"Průměr: {sum(veky) / pocet:.1f}")
+print(f"Průměr: {sum(veky) / len(veky):.1f}")
 print(f"Nejstarší: {max(veky)}")
 print(f"Nejmladší: {min(veky)}")
 

@@ -8,6 +8,13 @@ hoste = ["Anna", "Petra", "Jana", "Eva"]
 
 # Index a výřez fungují stejně jako u řetězců z lekce 6. Index počítá
 # od nuly, záporný index od konce:
+#
+#          "Anna"  "Petra"  "Jana"   "Eva"
+#        ╭───────┬────────┬───────┬───────╮
+#        │   0   │    1   │   2   │   3   │   index
+#        │  -4   │   -3   │  -2   │  -1   │   index od konce
+#        ╰───────┴────────┴───────┴───────╯
+#
 print(hoste[0])         # Anna
 print(hoste[2])         # Jana
 print(hoste[-1])        # Eva

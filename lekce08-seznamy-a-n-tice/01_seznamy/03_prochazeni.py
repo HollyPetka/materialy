@@ -7,7 +7,7 @@ hoste = ["Anna", "Petra", "Jana", "Adéla"]
 
 
 # Cyklus for prochází seznam stejně jako řetězec. Místo znaků dostaneš
-# po jedné položky seznamu. Pozvánky jsou hotové na tři řádky:
+# po jedné položky seznamu. Pozvánky jsou hotové na dva řádky:
 for host in hoste:
     print(f"Milá {host}, přijď v sobotu na večírek!")
 

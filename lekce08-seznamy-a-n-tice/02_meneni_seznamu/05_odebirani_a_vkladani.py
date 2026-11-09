@@ -22,7 +22,7 @@ print(posledni)     # Eva
 print(hoste)        # ['Petra']
 
 
-# Metoda insert vloží položku na daný index. Ostatní se posunou:
+# Metoda insert vloží položku na daný index. Ostatní se posunou doprava:
 hoste.insert(0, "Marie")
 print(hoste)        # ['Marie', 'Petra']
 

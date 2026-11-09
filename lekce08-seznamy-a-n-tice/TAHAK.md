@@ -49,18 +49,25 @@ list(range(1, 6))               # [1, 2, 3, 4, 5]
 |---|---|
 | `hoste[1] = "Marie"` | nahradí položku na indexu |
 | `hoste.append("Eva")` | přidá na konec |
-| `hoste.insert(0, "Eva")` | vloží na index, ostatní se posunou |
+| `hoste.insert(0, "Eva")` | vloží na index, ostatní se posunou doprava |
 | `hoste.remove("Jana")` | odebere podle hodnoty (když tam není → `ValueError`) |
 | `hoste.pop(0)` | odebere podle indexu a vrátí ji |
 | `hoste.pop()` | odebere a vrátí poslední |
 | `hoste.sort()` | seřadí od nejmenšího, `Č` a další české znaky až za `z` |
 | `hoste.sort(reverse=True)` | seřadí obráceně |
 
-Tyhle metody mění seznam a vrací `None`. Výsledek nikam neukládej:
+Metody `append`, `insert`, `remove` a `sort` mění seznam a vrací `None`.
+Jejich výsledek nikam neukládej:
 
 ```python
 hoste.sort()                # správně
 hoste = hoste.sort()        # špatně – v hoste je teď None
+```
+
+Výjimka je `pop`: seznam změní a odebranou položku vrátí.
+
+```python
+prvni = hoste.pop(0)        # v prvni je odebraná položka
 ```
 
 ## Text a seznam

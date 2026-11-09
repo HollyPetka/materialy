@@ -21,13 +21,19 @@ while True:
         break
     teploty.append(int(odpoved))
 
-prumer = sum(teploty) / len(teploty)
-nad_prumerem = 0
+if len(teploty) == 0:
+    print("Nezadala jsi žádnou teplotu.")
+else:
+    prumer = sum(teploty) / len(teploty)
+    nad_prumerem = 0
 
-for teplota in teploty:
-    if teplota > prumer:
-        nad_prumerem = nad_prumerem + 1
+    for teplota in teploty:
+        if teplota > prumer:
+            nad_prumerem = nad_prumerem + 1
 
-print(f"Nejvyšší: {max(teploty)}")
-print(f"Průměr: {prumer:.1f}")
-print(f"Nad průměrem: {nad_prumerem}")
+    print(f"Nejvyšší: {max(teploty)}")
+    print(f"Průměr: {prumer:.1f}")
+    print(f"Nad průměrem: {nad_prumerem}")
+
+# Bez té podmínky by program při "konec" hned na začátku spadl: dělení
+# nulou (ZeroDivisionError) a max prázdného seznamu (ValueError).
