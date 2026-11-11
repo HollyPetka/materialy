@@ -11,7 +11,7 @@ from random import randrange
 
 
 def uklid_vstupu(text):
-    return text.strip().title()
+    return text.strip().lower()
 
 
 def tah_pocitace():
@@ -31,7 +31,7 @@ def je_platny(tah):
 def kdo_vyhral(tvuj, pocitacuv):
     if tvuj == pocitacuv:
         return "remiza"
-    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "papir"
+    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "nuzky" 
     vyhrala_nuzkami = tvuj == "nuzky" and pocitacuv == "papir"
     vyhrala_papirem = tvuj == "papir" and pocitacuv == "kamen"
     if vyhrala_kamenem or vyhrala_nuzkami or vyhrala_papirem:

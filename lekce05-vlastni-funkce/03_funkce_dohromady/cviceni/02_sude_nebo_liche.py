@@ -8,3 +8,18 @@
 #    Pak v cyklu for vypiš popis čísel od 1 do 6.
 
 
+def je_sude_cislo (cislo):
+	return cislo % 2 == 0
+
+def popis(cislo):
+	if je_sude_cislo (cislo):
+		return str(cislo) + " je sudé"
+	else:
+		return str(cislo) + " je liché"
+
+
+
+for cislo in range(1, 15):
+    print(popis(cislo))
+
+

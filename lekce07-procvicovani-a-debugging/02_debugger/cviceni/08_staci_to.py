@@ -6,10 +6,10 @@
 #
 # Zadej 1000 a 250.
 
-castka = input("Kolik korun máš? ")
-cena = input("Kolik stojí vstupenka? ")
+castka = int(input("Kolik korun máš? "))
+cena = int(input("Kolik stojí vstupenka? "))
 
-if castka > cena:
+if castka >= cena:
     print("Stačí.")
 else:
     print("Nestačí.")

@@ -7,16 +7,16 @@
 #
 # Zkontroluj podle pravidel výš, jestli vypsaná cena sedí.
 
-vek = 10
+vek = 65
 plna_cena = 250
 
-if vek < 65:
-    cena = plna_cena
-elif vek < 6:
+if vek < 6:
     cena = 0
 elif vek < 18:
     cena = plna_cena / 2
-else:
+elif vek >= 65:
     cena = plna_cena * 0.70
+else:
+    cena = plna_cena 
 
 print(f"Vstupenka pro {vek} let: {cena:.0f} Kč")
