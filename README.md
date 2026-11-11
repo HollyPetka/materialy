@@ -25,6 +25,13 @@ přidávají, ty starší zůstávají beze změny.
 
 Další lekce přibývají v průběhu kurzu.
 
+## Workshopy
+
+Materiály k workshopům jsou v samostatných repozitářích:
+
+- [Opakovací workshop](https://github.com/pyladiesprague/workshop-opakovani)
+- [Závěrečný workshop](https://github.com/pyladiesprague/workshop-zaverecny)
+
 ## Co najdeš v každé lekci
 
 ```
