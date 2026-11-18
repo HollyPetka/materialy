@@ -12,8 +12,12 @@ for jmeno, darek in darky:
         print(darek)        # víno
 
 
-# Slovník si ke každému klíči pamatuje hodnotu. Píše se do složených
-# závorek. Před dvojtečkou je klíč, za ní hodnota a dvojice oddělují čárky:
+# Slovník ukládá dvojice: klíč a hodnotu. Je trochu jako seznam, jen se
+# k hodnotě nedostaneš indexem, ale klíčem. Proto ho nemusíš procházet:
+# řekneš klíč a slovník rovnou vrátí hodnotu.
+#
+# Píše se do složených závorek. Před dvojtečkou je klíč, za ní hodnota
+# a dvojice oddělují čárky:
 darky = {"Anna": "dort", "Petra": "víno", "Jana": "chlebíčky"}
 
 # Hodnotu dostaneš rovnou podle klíče, bez cyklu:
@@ -52,3 +56,8 @@ print(stoly[7])             # Jana
 # i n-tice. Klíčem bývá text nebo číslo:
 oblibene = {"Anna": ["dort", "víno"], "Petra": ["džus"]}
 print(oblibene["Anna"])     # ['dort', 'víno']
+
+# V jednom slovníku můžou být hodnoty různých druhů. Když ale slovníkem
+# hledáš (ceník, překlady), drž hodnoty stejného druhu. Jinak bys
+# u každé musela hlídat, jestli s ní jde třeba počítat. Kdy je míchání
+# v pořádku, uvidíš ve třetí sekci.

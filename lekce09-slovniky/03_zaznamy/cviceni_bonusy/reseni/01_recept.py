@@ -35,5 +35,5 @@ else:
         mnozstvi, jednotka = udaj
         print(f"{surovina}: {round(mnozstvi * pomer)} {jednotka}")
 
-# Metodu isdigit znáš z lekce 6. Ohlídá, že int nespadne na textu jako
-# "šest" nebo "-2". Nulu je potřeba vyloučit zvlášť.
+# Metodu isdigit znáš z lekce 6. Text jako "šest" nebo "-2" neprojde,
+# takže se na něm int nespustí. Nulu je potřeba vyloučit zvlášť.

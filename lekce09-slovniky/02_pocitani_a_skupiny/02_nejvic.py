@@ -10,8 +10,13 @@ pocty = {"Trezor": 3, "Jožin z bažin": 2, "Holky z naší školky": 1}
 print(max(pocty.values()))      # 3
 
 # Vítěze najdeš stejným cyklem, jakým jsi v lekci 3 hledala největší
-# číslo. Jen si k počtu pamatuješ i klíč:
-vitez = ""
+# číslo. Jen si k počtu pamatuješ i klíč.
+#
+# Na začátku vítěze ještě neznáš, proto je v proměnné None, tedy „nic“
+# (lekce 5). Když nikdo nehlasoval a slovník je prázdný, cyklus
+# neproběhne ani jednou a vitez zůstane None. Podle toho to poznáš:
+# if vitez is None.
+vitez = None
 nejvic = 0
 
 for pisnicka, pocet in pocty.items():
@@ -27,7 +32,7 @@ print(f"Vyhrála písnička {vitez} ({nejvic} hlasy).")
 # větší počet, takže vyhraje ta, která byla ve slovníku dřív:
 pocty = {"Trezor": 2, "Jožin z bažin": 2}
 
-vitez = ""
+vitez = None
 nejvic = 0
 
 for pisnicka, pocet in pocty.items():

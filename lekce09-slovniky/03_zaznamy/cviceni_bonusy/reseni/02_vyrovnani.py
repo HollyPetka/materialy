@@ -41,14 +41,16 @@ else:
     for kdo, castka in zaplatila.items():
         print(f"{kdo} zaplatila {castka} Kč")
 
-    na_jednu = sum(zaplatila.values()) / len(zaplatila)
-    print(f"Na jednu: {na_jednu:.0f} Kč")
+    # Podíl se zaokrouhlí na celé koruny hned. Jinak by se porovnávaly
+    # i haléře, které výpis nezobrazí, a mohlo by vyjít „doplatí 0 Kč“.
+    na_jednu = round(sum(zaplatila.values()) / len(zaplatila))
+    print(f"Na jednu: {na_jednu} Kč")
 
     for kdo, castka in zaplatila.items():
         rozdil = castka - na_jednu
         if rozdil > 0:
-            print(f"{kdo} dostane zpátky {rozdil:.0f} Kč")
+            print(f"{kdo} dostane zpátky {rozdil} Kč")
         elif rozdil < 0:
-            print(f"{kdo} doplatí {-rozdil:.0f} Kč")
+            print(f"{kdo} doplatí {-rozdil} Kč")
         else:
             print(f"{kdo} je vyrovnaná")

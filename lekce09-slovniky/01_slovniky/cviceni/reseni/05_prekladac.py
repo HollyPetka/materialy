@@ -5,7 +5,8 @@
 #    Vrátí větu přeloženou slovo po slově. Slova, která ve slovníku
 #    nejsou, nechá, jak jsou. Velikost písmen ve větě nehraje roli.
 #
-#    Pak se zeptej na větu a vypiš její překlad.
+#    Pak se zeptej na větu a vypiš její překlad. Větu piš bez tečky
+#    a čárek.
 #
 #      Věta: Kočka pije mléko
 #      cat drinks milk
@@ -46,3 +47,7 @@ print(preloz(veta, slovnik))
 # psaní do terminálu:
 #
 #     print(preloz("pes a kočka", slovnik))     # dog and cat
+#
+# Proč bez tečky? Metoda split dělí jen podle mezer, takže z věty
+# "Kočka pije mléko." vznikne slovo "mléko." i s tečkou. Takový klíč
+# ve slovníku není a slovo zůstane nepřeložené.

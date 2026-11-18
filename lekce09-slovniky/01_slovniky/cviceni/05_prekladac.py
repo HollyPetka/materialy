@@ -5,7 +5,8 @@
 #    Vrátí větu přeloženou slovo po slově. Slova, která ve slovníku
 #    nejsou, nechá, jak jsou. Velikost písmen ve větě nehraje roli.
 #
-#    Pak se zeptej na větu a vypiš její překlad.
+#    Pak se zeptej na větu a vypiš její překlad. Větu piš bez tečky
+#    a čárek.
 #
 #      Věta: Kočka pije mléko
 #      cat drinks milk

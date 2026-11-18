@@ -1,7 +1,8 @@
 # ---------------------------------------------
 #  Když klíč chybí
 # ---------------------------------------------
-# Spusť soubor. Na konci schválně spadne – tu chybu si přečti.
+# Spusť soubor. Skončí chybou, a to schválně: vysvětlení je na konci
+# souboru.
 
 darky = {"Anna": "dort", "Petra": "víno", "Jana": "chlebíčky"}
 
@@ -26,7 +27,8 @@ else:
 print(darky.get("Petra"))   # víno
 print(darky.get("Karel"))   # None
 
-# Jestli jsi dostala None, zjistíš zápisem is None:
+# Jestli jsi dostala None, zjistíš zápisem is None. Fungovalo by i == None,
+# ale u None se píše is, a tak to uvidíš i v cizím kódu:
 darek = darky.get("Karel")
 
 if darek is None:

@@ -33,10 +33,16 @@ Klíče rozlišují velká a malá písmena: `"petra"` není `"Petra"`.
 
 ## Měnění
 
+Tabulka počítá s `darky` ze začátku taháku a s tímhle slovníkem:
+
+```python
+sklenky = {"Anna": 1, "Petra": 2}       # kolik kdo vypil sklenek
+```
+
 | Zápis | Co dělá |
 |---|---|
 | `darky["Jana"] = "chlebíčky"` | přidá dvojici, nebo přepíše hodnotu, když klíč už je |
-| `darky["Anna"] = darky["Anna"] + 1` | změní hodnotu výpočtem (klíč už musí být ve slovníku) |
+| `sklenky["Anna"] = sklenky["Anna"] + 1` | změní hodnotu výpočtem (klíč už musí být ve slovníku) |
 | `darky.pop("Jana")` | odebere dvojici a **vrátí její hodnotu** |
 | `darky.copy()` | samostatná kopie |
 
