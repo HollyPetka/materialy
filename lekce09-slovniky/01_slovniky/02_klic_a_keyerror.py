@@ -27,12 +27,25 @@ else:
 print(darky.get("Petra"))   # víno
 print(darky.get("Karel"))   # None
 
-# Jestli jsi dostala None, zjistíš zápisem is None. Fungovalo by i == None,
-# ale u None se píše is, a tak to uvidíš i v cizím kódu:
+# Jestli jsi dostala None, zjistíš zápisem is None:
 darek = darky.get("Karel")
 
 if darek is None:
     print("Karel nic nepřinese.")   # Karel nic nepřinese.
+
+# Proč is, a ne ==? Porovnání == se ptá, jestli mají dvě věci stejný
+# obsah. Zápis is se ptá, jestli jde o jednu a tutéž věc. Ten rozdíl
+# znáš z lekce 8: kopie seznamu má stejný obsah, ale je to jiný seznam.
+hoste = ["Anna", "Petra"]
+catering = hoste.copy()
+
+print(catering == hoste)    # True – stejný obsah
+print(catering is hoste)    # False – dva různé seznamy
+
+# None existuje v Pythonu jen jedno. Když se ptáš, jestli máš None,
+# ptáš se, jestli je to právě tohle jedno None, a to je otázka pro is.
+# Zápis == None by většinou fungoval taky, ale is None je přesnější
+# a takhle ho běžně uvidíš i v cizím kódu.
 
 # Jako druhý argument můžeš metodě get dát hodnotu, kterou má vrátit
 # místo None:
